@@ -11,7 +11,6 @@
 	<meta name="description" content="<?php bloginfo("description"); ?>">
 	<title><?php bloginfo("name"); ?></title>
 	<link rel="stylesheet" href="<?php bloginfo("stylesheet_url"); ?>">
-	<title>CR12</title>
 </head>
 <body>
 
@@ -21,7 +20,9 @@
    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
        <span class="navbar-toggler-icon"></span>
    </button>
-   <a class="navbar-brand" href="#">Navbar</a>
+   <a class="navbar-brand" href="#">Travel Bloggers</a>
+   <ul class="navbar-nav mr-auto">
+<li>
        <?php
        wp_nav_menu( array(
            'theme_location'    => 'primary',// refers to the key in functions
@@ -34,6 +35,17 @@
            'walker'            => new WP_Bootstrap_Navwalker(),
        ) );
        ?>
+ </li>
+<li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Add your blog entry
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">select1</a>
+          <a class="dropdown-item" href="#">select2</a>
+        </div>
+      </li>
+</ul>
+
    </div>
 </nav>
 
