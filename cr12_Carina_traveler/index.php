@@ -2,6 +2,13 @@
 
 <?php get_header(); ?>
 
+
+<?php
+      if(is_active_sidebar('sidebar')):
+     dynamic_sidebar('sidebar');
+     endif;  
+?>
+
 <div class="container-fluid main_container">
 
 	<div class="container blog_container">
@@ -28,7 +35,7 @@
 		</div>
 
 		<div class="entry_info">
-			<p><?php the_author(); ?><?php the_time("F j, Y g:i a"); ?></p>
+			<p><?php the_author(); ?> <?php the_time("F j, Y g:i a"); ?></p>
 		</div>
 
 		<div class="entry_text">

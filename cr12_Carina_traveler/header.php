@@ -20,7 +20,7 @@
    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
        <span class="navbar-toggler-icon"></span>
    </button>
-   <a class="navbar-brand" href="#">Travel Bloggers</a>
+   <a class="navbar-brand" href="index.php"> Travel Bloggers</a>
    <ul class="navbar-nav mr-auto">
 <li>
        <?php
@@ -37,13 +37,13 @@
        ?>
  </li>
 <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" style="color:black" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Add your blog entry
+        <a class="nav-link dropdown-toggle" style="color:black" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Travelers & Places
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">BlogType1</a>
-          <a class="dropdown-item" href="#">BlogType2</a>
+          <a class="dropdown-item" href="travelers.php">Travelers</a>
+          <a class="dropdown-item" href="places.php">Places</a>
         </div>
-      </li>
+</li>
 </ul>
 
    </div>
