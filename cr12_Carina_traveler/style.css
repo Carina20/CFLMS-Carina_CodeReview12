@@ -5,13 +5,36 @@ Author: Carina;
 */
 
 nav {
-	background-color: rgb(0,254,127);
+	background-color: rgb(0,240,234);
 }
 
 
 .main_container {
 	background: url(img/background.jpeg);
-	background-size: 50%;
-	height:1500px;
+	background-size: 30%;
 }
 
+.h1_index {
+	text-align: center;
+}
+
+#h_indexEntry {
+	color: rgb(0,235,230);
+}
+
+#entry {
+	width:40%;
+	flex-flow: column;
+}
+
+.entries {
+	flex-flow: row;
+}
+
+.entry_info {
+	color: rgb(255,255,204);
+}
+
+.entry_text {
+	color: rgb(255,255,204);
+}

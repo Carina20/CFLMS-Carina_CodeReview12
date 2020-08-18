@@ -37,7 +37,7 @@
        ?>
  </li>
 <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Add your blog entry
+        <a class="nav-link dropdown-toggle" style="color:black" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Add your blog entry
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#">select1</a>
@@ -51,9 +51,53 @@
 
 <div class="container-fluid main_container">
 
-	<h1> jklöjöjooö </h1>
+	<div class="container blog_container">
 
+		<div class="row h1_index">
+			<div class="col">
+				<br>
+				<h1> Latest TravelBlogger stories </h1>
+			</div>
+		</div>
+
+	<div class="row entries">
+
+	<div id="entry">
+
+		<div class="h_entry">
+
+				<?php if(have_posts()) : ?>
+			<?php while(have_posts()) : the_post(); ?>
+			<h3><a href="<?php the_permalink(); ?>" id="h_indexEntry"> <?php the_title(); ?></a></h3>
+
+		</div>
+
+		<div class="entry_info">
+			<p><?php the_author(); ?><?php the_time("F j, Y g:i a"); ?></p>
+		</div>
+
+		<div class="entry_text">
+		<p><?php the_content(); ?></p>
+		
+	
+
+			<?php endwhile; ?>
+		<?php else :?>
+			<?php_("No posts found"); ?>
+			<?php endif; ?>
+		
 </div>
+	
+		</div>  <!---------------end of entry----------------->
+
+
+	 
+
+	</div> <!-----------end of entries-------------->
+
+	</div> <!-----------------end of blog_container----------------->
+
+</div> <!---------------------- end of main_container--------------->
 
 
 
